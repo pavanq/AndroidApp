@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.practice.MainActivity">
+
+    <TextView
+        android:id="@+id/HelloTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textChangeButton"
+        android:layout_marginBottom="30dp"
+        android:text="@string/text"
+        android:textAlignment="center"
+        android:textSize="30sp"/>
+
+    <Button
+        android:id="@+id/textChangeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/buttontext"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="100dp" />
+
+    <ImageView
+        android:id="@+id/MainImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/HelloTextView"
+        android:layout_centerHorizontal="true"
+        android:adjustViewBounds="true"
+        android:paddingTop="10dp"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/main_title" />
+
+    <Button
+        android:id="@+id/ActivityButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:text="Next Activity" />
+
+</RelativeLayout>
