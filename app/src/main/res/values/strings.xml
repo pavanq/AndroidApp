@@ -2,6 +2,7 @@
     <string name="app_name">Practice</string>
     <string name="text">Get Random Images</string>
     <string name="buttontext">Another Image!</string>
+    <string name="Empty_view_text">No Data to Display</string>
 
 
 </resources>

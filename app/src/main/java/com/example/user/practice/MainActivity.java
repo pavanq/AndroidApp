@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
     private ImageView MainImageView;
     private Button textChangeButton;
     private Button ActivityButton;
+    private Button ListButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,12 +32,24 @@ public class MainActivity extends AppCompatActivity {
         textChangeButton = (Button) findViewById(R.id.textChangeButton);
         MainImageView = (ImageView) findViewById(R.id.MainImageView);
         ActivityButton = (Button) findViewById(R.id.ActivityButton);
+        ListButton = (Button) findViewById(R.id.ListButton);
 
         Toast.makeText(MainActivity.this,"App is running",Toast.LENGTH_SHORT).show();
 
         firstbuttonlistener();
         secondbuttonlistener();
+        listbuttonlistener();
 
+    }
+
+    private void listbuttonlistener() {
+        ListButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent2 = new Intent(MainActivity.this,MyListActivity.class);
+                startActivity(intent2);
+            }
+        });
     }
 
     @Override
